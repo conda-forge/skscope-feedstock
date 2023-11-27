@@ -1,5 +1,5 @@
 {% set name = "skscope" %}
-{% set version = "0.1.5" %}
+{% set version = "0.1.6" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/skscope-{{ version }}.tar.gz
-  sha256: 5be2b15dd5609ebff3e6c72c18a398060b2648ec488e82bc915eb38f4589a8bc
+  sha256: 83c59a33ebc147fd682e021bdecdbfbeb4902761734bcf609d27131971a44e9b
 
 build:
   skip: true  # [py<39 or win]
