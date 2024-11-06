@@ -12,11 +12,12 @@ source:
 build:
   skip: true  # [py<39 or win]
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   build:
     - {{ compiler('cxx') }}
+    - {{ stdlib("c") }}
     - make  # [not win]
     - ninja  # [win]
     - cmake >=3.14
